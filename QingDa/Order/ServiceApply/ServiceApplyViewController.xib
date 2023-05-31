@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServiceApplyViewController" customModule="PhoneRepair" customModuleProvider="target">
+            <connections>
+                <outlet property="itemView" destination="NDa-d7-1vx" id="m6s-1s-DAo"/>
+                <outlet property="row1" destination="EWT-dR-faT" id="yPJ-ad-If7"/>
+                <outlet property="row2" destination="Evb-Ds-AgF" id="pp9-zk-4qE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDa-d7-1vx" customClass="ServiceApplyItemView" customModule="PhoneRepair" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="112"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="112" id="Odb-E2-X3h"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sh0-DB-gNL">
+                    <rect key="frame" x="0.0" y="156" width="414" height="10"/>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="EDY-xI-7me"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAS-PI-InO">
+                    <rect key="frame" x="0.0" y="256" width="414" height="2"/>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Neo-nj-s3B"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWT-dR-faT" customClass="ServiceApplyRow" customModule="PhoneRepair" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="166" width="414" height="90"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="SMZ-4P-e5b"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title.text" value="Somente reembolso"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="subTitle.text" value="Produto ainda não enviado, fazer pedido de reembolso."/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="icon.image" value="组 57015"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Evb-Ds-AgF" customClass="ServiceApplyRow" customModule="PhoneRepair" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="258" width="414" height="90"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="rDB-AD-JOV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title.text" value="Devolução e reembolso"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="subTitle.text" value="produto recebido, fazer pedido de devolução do produto recebido."/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="icon.image" value="组 57013"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Evb-Ds-AgF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="686-oq-5ey"/>
+                <constraint firstItem="Sh0-DB-gNL" firstAttribute="top" secondItem="NDa-d7-1vx" secondAttribute="bottom" id="FBi-dr-lFC"/>
+                <constraint firstItem="Sh0-DB-gNL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fxg-Mw-XZE"/>
+                <constraint firstItem="EWT-dR-faT" firstAttribute="top" secondItem="Sh0-DB-gNL" secondAttribute="bottom" id="G3L-Ge-WYh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LAS-PI-InO" secondAttribute="trailing" id="Hs0-51-m8C"/>
+                <constraint firstItem="NDa-d7-1vx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LEk-rn-dev"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EWT-dR-faT" secondAttribute="trailing" id="Nnc-bp-Jav"/>
+                <constraint firstItem="NDa-d7-1vx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="T4d-7V-VoB"/>
+                <constraint firstItem="LAS-PI-InO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ULc-hf-OTX"/>
+                <constraint firstItem="EWT-dR-faT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Xvf-nw-pqg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NDa-d7-1vx" secondAttribute="trailing" id="dg9-zb-xMp"/>
+                <constraint firstItem="LAS-PI-InO" firstAttribute="top" secondItem="EWT-dR-faT" secondAttribute="bottom" id="k6M-pt-THE"/>
+                <constraint firstItem="Evb-Ds-AgF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mXW-ws-VeY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sh0-DB-gNL" secondAttribute="trailing" id="qjZ-yk-2KT"/>
+                <constraint firstItem="Evb-Ds-AgF" firstAttribute="top" secondItem="LAS-PI-InO" secondAttribute="bottom" id="yHI-7A-dKB"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="80.357142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="组 57013" width="24" height="24"/>
+        <image name="组 57015" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

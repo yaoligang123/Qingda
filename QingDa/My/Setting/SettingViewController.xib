@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController" customModule="PhoneRepair" customModuleProvider="target">
+            <connections>
+                <outlet property="row1" destination="4Wt-xr-7sg" id="Y28-t4-fv0"/>
+                <outlet property="row2" destination="Df1-tJ-yWP" id="2va-ff-mQY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wt-xr-7sg" customClass="SettingRow" customModule="PhoneRepair" customModuleProvider="target">
+                    <rect key="frame" x="16" y="44" width="382" height="54"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="XFo-ES-qFV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title.text" value="Foto do perfil"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Df1-tJ-yWP" customClass="SettingRow" customModule="PhoneRepair" customModuleProvider="target">
+                    <rect key="frame" x="16" y="98" width="382" height="54"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="pNg-oe-jM8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title.text" value="Apelido"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4Wt-xr-7sg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0sI-uA-UPu"/>
+                <constraint firstItem="Df1-tJ-yWP" firstAttribute="top" secondItem="4Wt-xr-7sg" secondAttribute="bottom" id="2vq-zf-0ob"/>
+                <constraint firstItem="Df1-tJ-yWP" firstAttribute="leading" secondItem="4Wt-xr-7sg" secondAttribute="leading" id="H3y-bT-rbw"/>
+                <constraint firstItem="4Wt-xr-7sg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="mKa-Li-lEf"/>
+                <constraint firstItem="Df1-tJ-yWP" firstAttribute="trailing" secondItem="4Wt-xr-7sg" secondAttribute="trailing" id="xgg-tT-WKR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Wt-xr-7sg" secondAttribute="trailing" constant="16" id="zGE-l5-2un"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

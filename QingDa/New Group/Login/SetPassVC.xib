@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetPassVC" customModule="PhoneRepair" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiA-wt-Rub">
+                    <rect key="frame" x="34" y="60" width="82" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置登录密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfj-9N-eBL">
+                    <rect key="frame" x="34" y="88" width="86" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置6—16位密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cg-mA-7L7" customClass="LineTextField" customModule="PhoneRepair" customModuleProvider="target">
+                    <rect key="frame" x="34" y="129" width="346" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="SEB-jV-J7i"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAa-Nv-fvC" customClass="DefaultButton" customModule="PhoneRepair" customModuleProvider="target">
+                    <rect key="frame" x="34" y="223" width="346" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="3Ed-kp-SeI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="登录"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Xfj-9N-eBL" firstAttribute="leading" secondItem="HiA-wt-Rub" secondAttribute="leading" id="36Y-f2-y7Q"/>
+                <constraint firstItem="LAa-Nv-fvC" firstAttribute="trailing" secondItem="1cg-mA-7L7" secondAttribute="trailing" id="3a6-XN-oyZ"/>
+                <constraint firstItem="1cg-mA-7L7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="34" id="EsO-U1-yLu"/>
+                <constraint firstItem="Xfj-9N-eBL" firstAttribute="top" secondItem="HiA-wt-Rub" secondAttribute="bottom" constant="4" id="ITu-17-fY8"/>
+                <constraint firstItem="HiA-wt-Rub" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="34" id="M0b-IW-OOR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1cg-mA-7L7" secondAttribute="trailing" constant="34" id="Vdj-bo-QI6"/>
+                <constraint firstItem="LAa-Nv-fvC" firstAttribute="top" secondItem="1cg-mA-7L7" secondAttribute="bottom" constant="40" id="blh-dj-DRb"/>
+                <constraint firstItem="HiA-wt-Rub" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="jxs-ti-EGU"/>
+                <constraint firstItem="LAa-Nv-fvC" firstAttribute="leading" secondItem="1cg-mA-7L7" secondAttribute="leading" id="y0S-CQ-AED"/>
+                <constraint firstItem="1cg-mA-7L7" firstAttribute="top" secondItem="Xfj-9N-eBL" secondAttribute="bottom" constant="24" id="yHJ-uj-407"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

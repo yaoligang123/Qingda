@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IconTitle" customModule="PhoneRepair" customModuleProvider="target">
+            <connections>
+                <outlet property="iconImageView" destination="CjU-9v-Gx8" id="Wem-pw-2Tz"/>
+                <outlet property="titleLabel" destination="MPI-E7-AFQ" id="NaB-fB-vFM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CjU-9v-Gx8">
+                    <rect key="frame" x="52" y="0.0" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="3xd-AX-dNh"/>
+                        <constraint firstAttribute="height" constant="48" id="lu7-ib-C7b"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPI-E7-AFQ">
+                    <rect key="frame" x="58" y="77" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCq-yC-ye0">
+                    <rect key="frame" x="0.0" y="0.0" width="152" height="94"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="tap" destination="-1" eventType="touchUpInside" id="Axe-tt-KXG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WCq-yC-ye0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4bl-Us-GBm"/>
+                <constraint firstItem="WCq-yC-ye0" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="KTM-g2-jno"/>
+                <constraint firstItem="CjU-9v-Gx8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NNy-va-A1s"/>
+                <constraint firstItem="WCq-yC-ye0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dM3-Zh-yu1"/>
+                <constraint firstItem="MPI-E7-AFQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="g2X-fU-XjG"/>
+                <constraint firstItem="CjU-9v-Gx8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rYJ-fi-goP"/>
+                <constraint firstItem="WCq-yC-ye0" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="uyA-eO-Lct"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="MPI-E7-AFQ" secondAttribute="bottom" id="z1d-pZ-CWg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-57.971014492753625" y="-160.04464285714286"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,173 @@
+PODS:
+  - Alamofire (5.6.4)
+  - AlipaySDK-iOS (15.8.11)
+  - AliPlayerSDK_iOS (5.5.5.1):
+    - AliPlayerSDK_iOS/AliPlayerSDK (= 5.5.5.1)
+  - AliPlayerSDK_iOS/AliPlayerSDK (5.5.5.1)
+  - Braspag3Ds (1.0.15)
+  - CleanJSON (1.0.9)
+  - CollapsibleTableSectionViewController (2.0.1)
+  - DatePickerDialog (4.0)
+  - Firebase (10.3.0):
+    - Firebase/Core (= 10.3.0)
+  - Firebase/Core (10.3.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (~> 10.3.0)
+  - Firebase/CoreOnly (10.3.0):
+    - FirebaseCore (= 10.3.0)
+  - FirebaseAnalytics (10.3.0):
+    - FirebaseAnalytics/AdIdSupport (= 10.3.0)
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseAnalytics/AdIdSupport (10.3.0):
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleAppMeasurement (= 10.3.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseCore (10.3.0):
+    - FirebaseCoreInternal (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Logger (~> 7.8)
+  - FirebaseCoreInternal (10.10.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseInstallations (10.3.0):
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - PromisesObjC (~> 2.1)
+  - GoogleAppMeasurement (10.3.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.3.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (10.3.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.3.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.3.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.10.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.10.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.10.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.10.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.10.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.10.0)"
+  - GoogleUtilities/Reachability (7.10.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.10.0):
+    - GoogleUtilities/Logger
+  - IQKeyboardManagerSwift (6.5.11)
+  - Kingfisher (4.8.1)
+  - MJRefresh (3.7.5)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - PhotoSlider (1.2.0):
+    - Kingfisher
+  - PromisesObjC (2.1.1)
+  - Toaster (2.3.0)
+  - WechatOpenSDK (2.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlipaySDK-iOS
+  - AliPlayerSDK_iOS
+  - Braspag3Ds
+  - CleanJSON
+  - CollapsibleTableSectionViewController (~> 2.0.1)
+  - DatePickerDialog
+  - Firebase
+  - IQKeyboardManagerSwift
+  - Kingfisher (~> 4.8.0)
+  - MJRefresh
+  - NVActivityIndicatorView
+  - PhotoSlider
+  - Toaster
+  - WechatOpenSDK
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlipaySDK-iOS
+    - AliPlayerSDK_iOS
+    - Braspag3Ds
+    - CleanJSON
+    - CollapsibleTableSectionViewController
+    - DatePickerDialog
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreInternal
+    - FirebaseInstallations
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MJRefresh
+    - nanopb
+    - NVActivityIndicatorView
+    - PhotoSlider
+    - PromisesObjC
+    - Toaster
+    - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  AlipaySDK-iOS: a07b6eafa847a5b29acb6c150ea16d9792d5d167
+  AliPlayerSDK_iOS: 195c0131551a4a1a2bc32891d2f2fc658a660d24
+  Braspag3Ds: ca8f24773a5bd8adfa256ebb6313218583f427de
+  CleanJSON: 910a36465ce4829e264a902ccf6d1455fdd9f980
+  CollapsibleTableSectionViewController: 40d97d684d870044522a0dc29b128a6acaaa99df
+  DatePickerDialog: ccff2f91ff7a018057a4d72fa5ad6de49c8cb0cd
+  Firebase: f92fc551ead69c94168d36c2b26188263860acd9
+  FirebaseAnalytics: 036232b6a1e2918e5f67572417be1173576245f3
+  FirebaseCore: 988754646ab3bd4bdcb740f1bfe26b9f6c0d5f2a
+  FirebaseCoreInternal: 971029061d326000d65bfdc21f5502c75c8b0893
+  FirebaseInstallations: e2f26126089dcf41e215f7b8925af8d953c7d602
+  GoogleAppMeasurement: c7d6fff39bf2d829587d74088d582e32d75133c3
+  GoogleUtilities: bad72cb363809015b1f7f19beb1f1cd23c589f95
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  PhotoSlider: 0d3c864ddf6edeb1027cb39911a26b3b707e9ba9
+  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
+  WechatOpenSDK: e79349b37d44c015210f39fd6d2379f0ec60efe2
+
+PODFILE CHECKSUM: af3acee310fe086926ba6c8f30da556fb0433f6f
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeStoreCell" rowHeight="290" id="KGk-i7-Jjw" customClass="HomeStoreCell" customModule="PhoneRepair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwJ-J4-lKQ" customClass="AddressView" customModule="PhoneRepair" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="190" width="320" height="100"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X4y-x2-Qek">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="SaF-Bz-pQ9"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TwJ-J4-lKQ" secondAttribute="trailing" id="0eD-Hy-stQ"/>
+                    <constraint firstItem="TwJ-J4-lKQ" firstAttribute="top" secondItem="X4y-x2-Qek" secondAttribute="bottom" constant="10" id="5P3-fM-G0A"/>
+                    <constraint firstItem="TwJ-J4-lKQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FMb-pV-awK"/>
+                    <constraint firstAttribute="trailing" secondItem="X4y-x2-Qek" secondAttribute="trailing" id="R7D-ba-2o1"/>
+                    <constraint firstItem="X4y-x2-Qek" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ynq-J7-4SA"/>
+                    <constraint firstItem="X4y-x2-Qek" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fGQ-KL-15r"/>
+                    <constraint firstAttribute="bottom" secondItem="TwJ-J4-lKQ" secondAttribute="bottom" id="n1b-uD-Sai"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="address" destination="TwJ-J4-lKQ" id="1xt-VI-Qmo"/>
+                <outlet property="storeImg" destination="X4y-x2-Qek" id="HTg-qe-NV1"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

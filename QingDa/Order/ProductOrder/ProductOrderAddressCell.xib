@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="209" id="KGk-i7-Jjw" customClass="ProductOrderAddressCell" customModule="PhoneRepair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="209"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="209"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalhe do pedido" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRK-8q-tJV">
+                        <rect key="frame" x="12" y="16" width="140" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="DRB-gO-pkS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1s-Ky-heh">
+                        <rect key="frame" x="313.5" y="17.5" width="26.5" height="17"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.65098039215686276" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84y-yZ-0c9">
+                        <rect key="frame" x="0.0" y="52" width="352" height="1"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="auP-Be-7bK"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNP-AO-SnI" customClass="AddressView" customModule="PhoneRepair" customModuleProvider="target">
+                        <rect key="frame" x="12" y="69" width="328" height="124"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="JNP-AO-SnI" secondAttribute="trailing" constant="12" id="LMv-pJ-APk"/>
+                    <constraint firstItem="a1s-Ky-heh" firstAttribute="centerY" secondItem="vRK-8q-tJV" secondAttribute="centerY" id="My9-7m-div"/>
+                    <constraint firstItem="vRK-8q-tJV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="QN4-Bc-4Of"/>
+                    <constraint firstAttribute="trailing" secondItem="a1s-Ky-heh" secondAttribute="trailing" constant="12" id="beF-MM-0c0"/>
+                    <constraint firstItem="vRK-8q-tJV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="ePe-j9-gVU"/>
+                    <constraint firstItem="JNP-AO-SnI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="i1Y-YV-cKh"/>
+                    <constraint firstAttribute="bottom" secondItem="JNP-AO-SnI" secondAttribute="bottom" constant="16" id="led-Mr-ugv"/>
+                    <constraint firstAttribute="trailing" secondItem="84y-yZ-0c9" secondAttribute="trailing" id="q6V-Wi-73c"/>
+                    <constraint firstItem="84y-yZ-0c9" firstAttribute="top" secondItem="vRK-8q-tJV" secondAttribute="bottom" constant="16" id="sgF-P9-jh1"/>
+                    <constraint firstItem="84y-yZ-0c9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="t39-gJ-21a"/>
+                    <constraint firstItem="JNP-AO-SnI" firstAttribute="top" secondItem="84y-yZ-0c9" secondAttribute="bottom" constant="16" id="uJ3-x8-UfH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="addressView" destination="JNP-AO-SnI" id="UMY-dP-cLb"/>
+                <outlet property="state" destination="a1s-Ky-heh" id="s6h-He-pmv"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="169.08482142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

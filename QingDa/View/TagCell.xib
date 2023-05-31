@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TagCell" customModule="PhoneRepair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="86" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="86" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXK-Aa-f1a">
+                        <rect key="frame" x="0.0" y="0.0" width="86" height="50"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnZ-wa-Pp7">
+                        <rect key="frame" x="11" y="0.0" width="64" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="SXK-Aa-f1a" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="22T-0Y-BKQ"/>
+                <constraint firstItem="SXK-Aa-f1a" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dEy-a1-FX6"/>
+                <constraint firstAttribute="trailing" secondItem="mnZ-wa-Pp7" secondAttribute="trailing" constant="11" id="dWZ-FH-YFu"/>
+                <constraint firstItem="mnZ-wa-Pp7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="11" id="ggk-sQ-Sc5"/>
+                <constraint firstItem="mnZ-wa-Pp7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gqy-90-TVu"/>
+                <constraint firstAttribute="bottom" secondItem="SXK-Aa-f1a" secondAttribute="bottom" id="tEj-n1-3Lh"/>
+                <constraint firstAttribute="bottom" secondItem="mnZ-wa-Pp7" secondAttribute="bottom" id="uRA-Yn-cb9"/>
+                <constraint firstAttribute="trailing" secondItem="SXK-Aa-f1a" secondAttribute="trailing" id="zRu-5W-BoS"/>
+            </constraints>
+            <size key="customSize" width="86" height="50"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="12"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="bgView" destination="SXK-Aa-f1a" id="91W-EY-wiy"/>
+                <outlet property="title" destination="mnZ-wa-Pp7" id="Cir-QN-jCO"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="104.46428571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>
